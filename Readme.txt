@@ -1,6 +1,4 @@
-Thanks for downloading this template!
+# Personal Website
+> Welcome to my personal website!
 
-Template Name: Dashio
-Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-Author: TemplateMag.com
-License: https://templatemag.com/license/
+* [Website link](h30306.github.io)
