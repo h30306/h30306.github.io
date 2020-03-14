@@ -938,12 +938,12 @@ PANELS CONFIGURATIONS
 
 .grey-panel {
 	text-align: center;
-	background: #dfdfe1;
+	background: #ccd1d9;
 }
 .grey-panel .grey-header {
-	background: #ccd1d9;
+	background: #dfdfe1;
 	padding: 3px;
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
 }
 .grey-panel h5 {
 	font-weight: 200;
@@ -971,7 +971,7 @@ PANELS CONFIGURATIONS
 	background: #444c57;
 }
 .darkblue-panel .darkblue-header {
-	background: transparent;
+	background: #818D9C;
 	padding: 3px;
 	margin-bottom: 15px;
 }
