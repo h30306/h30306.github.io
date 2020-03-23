@@ -949,6 +949,10 @@ PANELS CONFIGURATIONS
 	font-weight: 200;
 	margin-top: 10px;
 }
+.grey-panel h3 {
+    color: white;
+    font-weight: 100;
+}
 .grey-panel p {
 	margin-left: 5px;
 }
@@ -983,6 +987,10 @@ PANELS CONFIGURATIONS
 	margin-top: 10px;
 	color: white;
 }
+.darkblue-panel h3 {
+    color: white;
+    font-weight: 100;
+}
 .darkblue-panel footer {
 	color: white;
 }
@@ -1013,6 +1021,29 @@ PANELS CONFIGURATIONS
 }
 .green-panel p {
 	color: white;
+}
+
+/*Lightblue Panel*/
+.lightblue-panel {
+    text-align: center;
+    background: #0487D2;
+}
+.lightblue-panel .lightblue-header {
+    background: #39799D;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+.lightblue-panel h5 {
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.lightblue-panel h3 {
+    color: white;
+    font-weight: 100;
+}
+.lightblue-panel p {
+    color: white;
 }
 
 /*White Panel */
