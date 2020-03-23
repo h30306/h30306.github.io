@@ -1000,6 +1000,38 @@ PANELS CONFIGURATIONS
 	font-weight: 700;
 }
 
+/* light purple*/
+
+.lightpurple-panel {
+    text-align: center;
+    background: #F1E0FF;
+}
+.lightpurple-panel .lightpurple-header {
+    background: #818D9C;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+.lightpurple-panel h1 {
+    color: #f2f2f2;
+}
+.lightpurple-panel h5 {
+    font-weight: 200;
+    margin-top: 10px;
+    color: white;
+}
+.lightpurple-panel h3 {
+    color: white;
+    font-weight: 100;
+}
+.lightpurple-panel footer {
+    color: white;
+}
+.lightpurple-panel footer h5 {
+    margin-left:10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
 /*Green Panel*/
 .green-panel {
 	text-align: center;
