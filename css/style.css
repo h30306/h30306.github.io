@@ -854,7 +854,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .custom-bar-chart .bar .title {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     width: 100%;
     text-align: center;
     font-size: 11px;
@@ -863,7 +863,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .custom-bar-chart .bar .value {
     position: absolute;
     bottom: 0;
-    background: #4ECDC4;
+    background: #303b4d;
     color: #4ECDC4;
     width: 100%;
     -webkit-border-radius: 5px 5px 0 0;
