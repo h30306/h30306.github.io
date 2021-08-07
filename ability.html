@@ -2,31 +2,25 @@
 <html lang="en">
 
 <head>
+  <!-- Data -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Dashboard">
-  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <meta name="author" content="Howard W. Chung">
   <title>Howard W. Chung's Ability</title>
-
+  <meta name="keyword" content="Howard Chung, WEI-YI CHUNG, 鍾崴亦, 崴亦, SCU, 東吳大學, Soochow Unniversity, 東吳大學資料科學系, 東吳大學巨量資料管理學院">
+  <meta name="description" content="WEI-YI Chung (Howard)'s personal website!">
+  <!-- Viewpoint -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicons -->
   <link href="img/muscale.png" rel="icon">
   <link href="img/muscale.png" rel="apple-touch-icon">
-
   <!-- Bootstrap core CSS -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
-  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
-  <script src="lib/chart-master/Chart.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98189156-2"></script>
-   
-     <style>
+  <!--external or custom css-->
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+
+  <style>
   .b-skills
   {
     text-align: center;
@@ -96,21 +90,7 @@
          }
    
       
-      </style>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-98189156-2');
-  </script>
-
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
+  </style>
 </head>
 
 <body>
@@ -424,56 +404,66 @@
   <!--script for this page-->
   <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-  <script src="plugins/jquery-2.2.4.min.js"></script>
- <script src="plugins/jquery.appear.min.js"></script>
- <script src="plugins/jquery.easypiechart.min.js"></script> 
- <script>
-    'use strict';
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/jquery.appear.min.js"></script>
+  <script src="assets/js/jquery.easypiechart.min.js"></script> 
+  <script src="lib/chart-master/Chart.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98189156-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-var $window = $(window);
+    gtag('config', 'UA-98189156-2');
+  </script>
+  <script>
+      'use strict';
 
-function run()
-{
-  var fName = arguments[0],
-    aArgs = Array.prototype.slice.call(arguments, 1);
-  try {
-    fName.apply(window, aArgs);
-  } catch(err) {
-     
-  }
-};
- 
-/* chart
-================================================== */
-function _chart ()
-{
-  $('.b-skills').appear(function() {
-    setTimeout(function() {
-      $('.chart').easyPieChart({
-        easing: 'easeOutElastic',
-        delay: 3000,
-        barColor: '#369670',
-        trackColor: '#fff',
-        scaleColor: false,
-        lineWidth: 21,
-        trackWidth: 21,
-        size: 250,
-        lineCap: 'round',
-        onStep: function(from, to, percent) {
-          this.el.children[0].innerHTML = Math.round(percent);
-        }
-      });
-    }, 150);
-  });
-};
- 
+  var $window = $(window);
 
-$(document).ready(function() {
-  
-  run(_chart);
-  
+  function run()
+  {
+    var fName = arguments[0],
+      aArgs = Array.prototype.slice.call(arguments, 1);
+    try {
+      fName.apply(window, aArgs);
+    } catch(err) {
+       
+    }
+  };
+   
+  /* chart
+  ================================================== */
+  function _chart ()
+  {
+    $('.b-skills').appear(function() {
+      setTimeout(function() {
+        $('.chart').easyPieChart({
+          easing: 'easeOutElastic',
+          delay: 3000,
+          barColor: '#369670',
+          trackColor: '#fff',
+          scaleColor: false,
+          lineWidth: 21,
+          trackWidth: 21,
+          size: 250,
+          lineCap: 'round',
+          onStep: function(from, to, percent) {
+            this.el.children[0].innerHTML = Math.round(percent);
+          }
+        });
+      }, 150);
+    });
+  };
+   
+
+  $(document).ready(function() {
     
-});
+    run(_chart);
+    
+      
+  });
 
 
     
